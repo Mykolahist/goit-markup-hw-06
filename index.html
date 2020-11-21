@@ -44,10 +44,10 @@
                     </div>
                     <div class="backdrop is-hidden" data-backdrop>
                         <div class="modal">
-                            <a class="close-btn" href="" data-close-modal>
+                            <button class="close-btn" data-close-modal>
                                 <svg class="cross" width="11" height="11">
-                                <use href="./images/sprite.svg#close"></use>
-                            </svg></a>
+                                    <use href="./images/sprite.svg#close"></use>
+                                </svg></button>
                             <form class="form js-speaker-form">
                                 <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
                                 <div class="form-field">
@@ -365,9 +365,13 @@
             </div>
             <div class="subscription">
                 <p class="subscription-title">подпишитесь на рассылку</p>
-                <div>
-                    <input class="subscription-input" type="mail" name="email" />
-                    <button class="subscription-btn">Подписаться</button>
+                <div class="subscription-area">
+                    <input class="subscription-input" type="mail" name="email" placeholder="E-mail" />
+                    <button class="subscription-btn">Подписаться
+                        <svg class="icon-send" width="24" height="24">
+                            <use href="./images/sprite.svg#icon-send"></use>
+                        </svg>
+                    </button>
                 </div>
             </div>
         </div>
